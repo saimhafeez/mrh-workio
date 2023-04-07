@@ -8,6 +8,7 @@
     "node": "18.x"
   },
   "scripts": {
+    "server-start": "npm run server",
     "build": "npm install",
     "build-client": "cd client && npm run build",
     "server": "nodemon server --ignore client",
