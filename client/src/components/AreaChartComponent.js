@@ -23,7 +23,7 @@ function AreaChartComponent({ data }) {
                 <XAxis dataKey='date' />
                 <YAxis allowDecimals={false} />
                 <Tooltip />
-                <Area dataKey='count' fill='#bef8fd' barSize={75} type='monotone' stroke='#2cb1bc' />
+                <Area dataKey='count' fill='#5E6EC0' barSize={75} type='monotone' stroke='#475CB6' />
             </AreaChart>
         </ResponsiveContainer>
     )
