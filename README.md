@@ -1,4 +1,4 @@
-# WorkIo: Job Searching Web App
+# WorkIO: Job Searching Web App
 
 This is a web application designed to simplify the job search process for job seekers by providing them with an efficient platform to find and apply for job listings. Users can create profiles, upload their resumes, and search for job listings based on different criteria such as location, industry, and job title. The job listings will contain comprehensive information about the job role, the company, and the requirements for the job.
 
