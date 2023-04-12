@@ -39,10 +39,13 @@ The live version of the application can be accessed at https://workio.onrender.c
 
 1. Clone the repository `git clone https://github.com/saimhafeez/mrh-workio`
 2. Change to the project directory `cd mrh-workio`
-3. Install the required dependencies `npm install`
-4. Run the server `npm run server`
-5. In another terminal, run the client `npm run client`
-6. Open the browser and navigate to http://localhost:3000
+3. Navigate to client Folder `cd client`
+4. Install the required dependencies `npm install`
+5. Navigate to server Folder `cd server`
+6. Install the required dependencies `npm install`
+7. Run the server `npm run server`
+8. No need to run client in a seperate terminal (because client folder is used as public)
+9. Open the browser and navigate to http://localhost:5000
 
 ## Contributions
 
