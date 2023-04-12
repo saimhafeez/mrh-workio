@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FormRow, FormRowSelect } from '.'
 import { useAppContext } from '../context/appContext'
 import Wrapper from '../assets/wrappers/SearchContainer'
 
 function SearchContainer() {
+
 
     const {
         isLoading,
@@ -18,6 +19,8 @@ function SearchContainer() {
         clearFilters
     } = useAppContext();
 
+    const [_search, _setSearch] = useState(search);
+
     const handleSearch = (e) => {
         if (isLoading) return
         handleChange({ name: e.target.name, value: e.target.value })
@@ -27,6 +30,12 @@ function SearchContainer() {
         e.preventDefault()
         clearFilters()
     }
+
+    useEffect(() => {
+        const getData = setTimeout(() => {
+            handleChange({ name: 'search', value: _search })
+        }, 2000);
+    }, [_search])
 
 
     return (
@@ -38,8 +47,11 @@ function SearchContainer() {
                     <FormRow
                         type='text'
                         name='search'
-                        value={search}
-                        handleChange={handleSearch}
+                        value={_search}
+                        handleChange={(e) => {
+                            _setSearch(e.target.value)
+                            console.log('_search', _search)
+                        }}
                     />
 
                     {/* search by status */}
